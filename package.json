@@ -1,0 +1,16 @@
+{
+  "name": "f2c_extension",
+  "version": "0.1.0",
+  "description": "Converts in-page temperatures in degrees Fahrenheit to degrees Celsius",
+  "repository": "https://github.com/jimCresswell/f2c-extension.git",
+  "author": "jimCresswell <jim.cresswell@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "web-ext run",
+    "lint:ext": "web-ext lint"
+  },
+  "devDependencies": {
+    "web-ext": "^4.1.0"
+  }
+}
