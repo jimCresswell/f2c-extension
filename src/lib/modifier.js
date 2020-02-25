@@ -57,26 +57,29 @@ function replaceFahrenheitRange(match, negative1, tempF1, negative2, tempF2, opt
  * @returns The modified text.
  */
 function f2cModifier(text) {
+  // Note: I don't think complex regexes are a good way to solve
+  // complex problems, but they are fun in a demo.
   const rIsRange = /\d+\s*(?:[-]|to)\s*([-]|minus )?\d+/gi;
   const rFahrenheitText = /([-]|minus )?(\d+)\s?(?:[º°]|degrees)?\s?F(?:ahrenheit)?(\)?)\b/gi;
   const rFahrenheitRangeText = /([-]|minus )?(\d+)\s*(?:[-]|to)\s*([-]|minus )?(\d+)\s?(?:[º°]|degrees)?\s?F(?:ahrenheit)?(\)?)\b/gi;
 
+  // Is this a temperature range?
   const isRange = rIsRange.test(text);
 
-  // Simple temperature.
+  // No, it's a simple temperature.
   if (!isRange) {
     return text.replace(rFahrenheitText, replaceFahrenheit);
   }
 
-  // Possible temperature range, get the values.
+  // Possible temperature range.
   // The range should include a Fahrenheit indicator.
   const isFahrenheit = rFahrenheitText.test(text);
-  // Is a range but isn't a Fahrenheit temperature, do nothing.
+  // It is a range but isn't a Fahrenheit temperature, do nothing.
   if (!isFahrenheit) {
     return text;
   }
 
-  // Is a Fahrenheit temperature range.
+  // It is a Fahrenheit temperature range.
   return text.replace(rFahrenheitRangeText, replaceFahrenheitRange);
 }
 
