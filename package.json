@@ -8,7 +8,8 @@
   "private": true,
   "scripts": {
     "dev": "web-ext run --source-dir ./dist/",
-    "lint:ext": "web-ext lint"
+    "lint:ext": "web-ext lint",
+    "lint:code": "eslint ./src"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
