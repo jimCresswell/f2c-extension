@@ -28,21 +28,4 @@ function f2cModifier(text) {
   });
 }
 
-/**
- * Given a DOM textNode modify the contents.
- *
- * @param {Object} textNode
- */
-function f2cModify(textNode) {
-  const text = textNode.nodeValue;
-
-  // The side-effect is deliberate.
-  /* eslint-disable no-param-reassign */
-  textNode.nodeValue = f2cModifier(text);
-  /* eslint-enable no-param-reassign */
-}
-
-export default f2cModify;
-export {
-  f2cModifier,
-};
+export default f2cModifier;
