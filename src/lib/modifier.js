@@ -20,10 +20,11 @@ function f2c(f) {
  * @returns The modified text.
  */
 function f2cModifier(text) {
-  const rFahrenheitText = /(\d+)\s?(?:º|degrees)?\s?F(\)?)\b/gi;
+  const rFahrenheitText = /([-]|minus )?(\d+)\s?(?:[º°]|degrees)?\s?F(?:ahrenheit)?(\)?)\b/gi;
 
-  return text.replace(rFahrenheitText, (match, tempF, optionalClosingBrace) => {
-    const tempC = f2c(tempF).toFixed(2);
+  return text.replace(rFahrenheitText, (match, negativeTemp, tempF, optionalClosingBrace) => {
+    const sign = negativeTemp === undefined ? 1 : -1;
+    const tempC = f2c(sign * tempF).toFixed(2);
     return `${tempC} degrees Celsius${optionalClosingBrace}`;
   });
 }
