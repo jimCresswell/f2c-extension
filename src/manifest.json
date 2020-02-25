@@ -12,7 +12,7 @@
         "<all_urls>"
       ],
       "js": [
-        "content_script.js"
+        "content_script.bundle.js"
       ],
       "run_at": "document_end"
     }
