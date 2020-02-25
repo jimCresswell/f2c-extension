@@ -1,5 +1,6 @@
 function f2c(f) {
-    return (5/9) * (f - 32);
+    tempF = parseInt(f, 10);
+    return (5/9) * (tempF - 32);
 }
 
 // Approach taken from https://github.com/panicsteve/cloud-to-butt 
