@@ -40,6 +40,7 @@ const willModify = [
 
 const willNotModify = [
   '50 ft',
+  '50ft',
   '50 Ft',
   '50 feet',
   '50 Feet',
