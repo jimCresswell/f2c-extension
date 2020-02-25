@@ -7,10 +7,12 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "dev": "web-ext run",
+    "dev": "web-ext run --source-dir ./dist/",
     "lint:ext": "web-ext lint"
   },
   "devDependencies": {
-    "web-ext": "^4.1.0"
+    "web-ext": "^4.1.0",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11"
   }
 }
