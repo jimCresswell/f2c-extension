@@ -10,7 +10,7 @@ function walk(node) {
     if (tagName == 'input' || tagName == 'textarea') {
         return;
     }
-    if (node.classList && node.classList.contains('ace_editor')) {
+    if (node.classList && node.classList.contains('f2c_off')) {
         return;
     }
 
@@ -42,7 +42,7 @@ function handleText(textNode) {
      */
     // Doesn't match ft (feet)
     // Initial test against https://www.rhs.org.uk/advice/profile?pid=664
-    rFahrenheitText = /(\d+)\w?(?:º|degrees)?\w?F(\)?)\b/gi;
+    rFahrenheitText = /(\d+)\s?(?:º|degrees)?\s?F(\)?)\b/gi;
 
     v = v.replace(rFahrenheitText, function(match, tempF, optionalClosingBrace) {
         return `${f2c(tempF).toFixed(2)} degrees Celsius${optionalClosingBrace}`;

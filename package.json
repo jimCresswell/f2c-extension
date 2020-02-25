@@ -7,7 +7,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "web-ext run",
+    "dev": "web-ext run",
     "lint:ext": "web-ext lint"
   },
   "devDependencies": {

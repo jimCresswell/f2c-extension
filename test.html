@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Testing F2C Browser Extension</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <style>
+        .content {
+            max-width: 80%;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+        }
+        header, header p, main, table {
+            max-width: 80%;
+            margin: 0 auto;
+        }
+        @media screen and (max-width: 720px) {
+            header, header p, main, table {
+            max-width: 100%;
+        }
+        }
+        header p {
+            max-width: 24em;
+        }
+        table {
+            margin-top: 2em;
+            text-align: left;
+        }
+        thead {
+            background-color: black;
+            color: white;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 0.4rem;
+        }
+        .label {
+            background: darkslategray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <header>
+            <h1>F2C Example Page</h1>
+            <p>This is a list of examples for verifying that the F2C extension is correctly converting temperatures in degrees Fahrenheit to degrees Celsius</p>
+        </header>
+        <main>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Original</th>
+                        <th scope="col">Converted</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="2" class="label">Should Convert</td>
+                    </tr>
+                    <tr>
+                        <td class="f2c_off">50F</td>
+                        <td class>50F</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="label">Should Not Convert</td>
+                    </tr>
+                    <tr>
+                        <td class="f2c_off">10 ft</td>
+                        <td class>10 ft</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
+</body>
+</html>
