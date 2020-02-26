@@ -4,6 +4,9 @@
 
 A browser extension for automatically converting degrees Fahrenheit to degrees Celsius in the page text.
 
+Fig. 1. Example conversions.
+![Example in-page temperature conversions from Fahrenheit to Celsius](./f2c_screenshot.png "Example in-page temperature conversions from Fahrenheit to Celsius")
+
 Tested against Firefox 73 and Chrome 80.
 
 The published extension is [available on addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/f2c/), visibility may be pending reviewer approval.
@@ -22,14 +25,14 @@ Commands are given with `yarn`, `npm run` will also work.
 | Command         | Description                                                                   |
 | :---             | :---                                                                           |
 | <code>yarn&nbsp;build</code>    | Builds the extension with Webpack in the `dist` directory.                    |
-| <code>yarn&nbsp;dev</code>      | `web-ext` opens an instance of Firefox with the extension temporarily installed for testing. Note the existence of `test\test.html` to help with manual testing. |
+| <code>yarn&nbsp;dev</code>      | `web-ext` opens an instance of Firefox with the extension temporarily installed for testing. Note the existence of [test/test.html](./test/test.html) to help with manual testing. |
 | <code>yarn&nbsp;lint:ext</code> | Lint the web extension config with `web-ext`.                                  |
 | <code>yarn&nbsp;lint:code</code> | Runs Eslint against the code.                                                 |
 | <code>yarn&nbsp;test:src</code>  | Runs the unit tests with Mocha. Test files live next to the module they test. |
 
 ## Notes
 
-* Continuous integration is via GitHub actions, config is [here](.github\workflows).
+* Continuous integration is via GitHub actions, config is [here](./.github/workflows).
 * Babel is used to transpile the test code, but not the application code (it doesn't need it yet). An alternative would be to remove Babel from the Mocha options and use [mocha-webpack](https://github.com/zinserjan/mocha-webpack) instead.
 
 ## Future Enhancements
