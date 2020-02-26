@@ -6,6 +6,13 @@ A browser extension for automatically converting degrees Fahrenheit to degrees C
 
 Tested against Firefox 73 and Chrome 80.
 
+## To Build the Zipped Extension Package
+
+* `git clone` the [source code](https://github.com/jimCresswell/f2c-extension) with remote [https://github.com/jimCresswell/f2c-extension.git](https://github.com/jimCresswell/f2c-extension.git).
+* Install [Node](https://nodejs.org/en/) (tested on 10.x and 12.x) and [yarn](https://classic.yarnpkg.com/en/docs/install) (currently using 1.x).
+* `yarn` then `yarn build` to download the dependencies and build the extension in the `./dist` directory.
+* Zip the contents of the `./dist` directory.
+
 ## Scripts
 
 Commands are given with `yarn`, `npm run` will also work.
