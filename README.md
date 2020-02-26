@@ -4,6 +4,8 @@
 
 A browser extension for automatically converting degrees Fahrenheit to degrees Celsius in the page text.
 
+Tested against Firefox 73 and Chrome 80.
+
 ## Scripts
 
 Commands are given with `yarn`, `npm run` will also work.
@@ -21,10 +23,6 @@ Commands are given with `yarn`, `npm run` will also work.
 * Continuous integration is via GitHub actions, config is [here](.github\workflows).
 * Babel is used to transpile the test code, but not the application code (it doesn't need it yet). An alternative would be to remove Babel from the Mocha options and use [mocha-webpack](https://github.com/zinserjan/mocha-webpack) instead.
 
-## To Do
-
-* Currently tested against Firefox. Test against Chrome.
-
 ## Future Enhancements
 
 * Wrap the modified content in a `span` and style to highlight changes.
@@ -32,5 +30,4 @@ Commands are given with `yarn`, `npm run` will also work.
 * Count how many changes were made and display in the popup.
 * Process numbers written as words.
 * Handle temperatures ranges and single temperatures in the same text node.
-* Get a proper icon.
 * Publish the extension on [https://addons.mozilla.org/](https://addons.mozilla.org/). See [https://extensionworkshop.com/documentation/publish/signing-and-distribution-overview/#distributing-your-addon](https://extensionworkshop.com/documentation/publish/signing-and-distribution-overview/#distributing-your-addon).
