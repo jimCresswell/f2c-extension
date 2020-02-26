@@ -2,7 +2,7 @@ const path = require('path');
 const CopyPlugin = require('copy-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
-// Note: this extension isn't intended for publication,
+// Note: this extension is intended as a demo,
 // so there is no 'production' build.
 module.exports = {
   mode: 'development',
@@ -18,6 +18,16 @@ module.exports = {
     ]),
     new CleanWebpackPlugin(),
   ],
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'eslint-loader',
+        options: {},
+      },
+    ],
+  },
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),

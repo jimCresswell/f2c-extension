@@ -21,7 +21,6 @@ Commands are given with `yarn`, `npm run` will also work.
 ## To Do
 
 * Currently tested against Firefox. Test against Chrome.
-* Include Eslint in the Webpack build process.
 
 ## Future Enhancements
 
