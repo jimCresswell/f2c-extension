@@ -9,7 +9,7 @@
   "scripts": {
     "build": "webpack",
     "dev": "web-ext run --source-dir ./dist/",
-    "lint:ext": "web-ext lint",
+    "lint:ext": "web-ext lint --source-dir ./dist/",
     "lint:code": "eslint ./src",
     "test:src": "mocha --require @babel/register \"./src/**/*.test.js\""
   },

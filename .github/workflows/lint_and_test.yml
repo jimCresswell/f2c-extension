@@ -18,8 +18,8 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: yarn
+    - run: yarn build # Builds, runs ESLint on the source code, creates working `manifest.json`
     - run: yarn lint:ext # Lints the Web Extension `manifest.json` file with web-ext.
-    - run: yarn build # Not necessary for testing but does run ESLint on the source code
     - run: yarn test
       env:
         CI: true
