@@ -6,6 +6,8 @@ A browser extension for automatically converting degrees Fahrenheit to degrees C
 
 Tested against Firefox 73 and Chrome 80.
 
+The published extension is [available on addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/f2c/), visibility may be pending reviewer approval.
+
 ## To Build the Zipped Extension Package
 
 * `git clone` the [source code](https://github.com/jimCresswell/f2c-extension) with remote [https://github.com/jimCresswell/f2c-extension.git](https://github.com/jimCresswell/f2c-extension.git).
@@ -37,4 +39,3 @@ Commands are given with `yarn`, `npm run` will also work.
 * Count how many changes were made and display in the popup.
 * Process numbers written as words.
 * Handle temperatures ranges and single temperatures in the same text node.
-* Publish the extension on [https://addons.mozilla.org/](https://addons.mozilla.org/). See [https://extensionworkshop.com/documentation/publish/signing-and-distribution-overview/#distributing-your-addon](https://extensionworkshop.com/documentation/publish/signing-and-distribution-overview/#distributing-your-addon).
