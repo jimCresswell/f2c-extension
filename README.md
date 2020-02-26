@@ -6,13 +6,13 @@ A browser extension for automatically converting degrees Fahrenheit to degrees C
 
 Commands are given with `yarn`, `npm run` will also work.
 
-| Command<img width="200px"/>       | Description                                                                   |
-| ---             | ---                                                                           |
-| `yarn build`    | Builds the extension with Webpack in the `dist` directory.                    |
-| `yarn dev`      | `web-ext` opens an instance of Firefox with the extension temporarily installed for testing. Note the existence of `test\test.html` to help with manual testing. |
-| `yarn lint:ext` | Lint the web extension config with `web-ext`.                                  |
-| `yarn lint:code` | Runs Eslint against the code.                                                 |
-| `yarn test:src`  | Runs the unit tests with Mocha. Test files live next to the module they test. |
+| Command         | Description                                                                   |
+| :---             | :---                                                                           |
+| <code>yarn&nbsp;build</code>    | Builds the extension with Webpack in the `dist` directory.                    |
+| <code>yarn&nbsp;dev</code>      | `web-ext` opens an instance of Firefox with the extension temporarily installed for testing. Note the existence of `test\test.html` to help with manual testing. |
+| <code>yarn&nbsp;lint:ext</code> | Lint the web extension config with `web-ext`.                                  |
+| <code>yarn&nbsp;lint:code</code> | Runs Eslint against the code.                                                 |
+| <code>yarn&nbsp;test:src</code>  | Runs the unit tests with Mocha. Test files live next to the module they test. |
 
 ## To Do
 
