@@ -14,6 +14,10 @@ Commands are given with `yarn`, `npm run` will also work.
 | <code>yarn&nbsp;lint:code</code> | Runs Eslint against the code.                                                 |
 | <code>yarn&nbsp;test:src</code>  | Runs the unit tests with Mocha. Test files live next to the module they test. |
 
+## Notes
+
+* Babel is used to transpile the test code, but not the application code (it doesn't need it yet). An alternative would be to remove Babel from the Mocha options and use [mocha-webpack](https://github.com/zinserjan/mocha-webpack) instead.
+
 ## To Do
 
 * Currently tested against Firefox. Test against Chrome.
@@ -27,4 +31,4 @@ Commands are given with `yarn`, `npm run` will also work.
 * Process numbers written as words.
 * Handle temperatures ranges and single temperatures in the same text node.
 * Get a proper icon.
-* Publish the extension on https://addons.mozilla.org/ . See https://extensionworkshop.com/documentation/publish/signing-and-distribution-overview/#distributing-your-addon .
+* Publish the extension on [https://addons.mozilla.org/](https://addons.mozilla.org/). See [https://extensionworkshop.com/documentation/publish/signing-and-distribution-overview/#distributing-your-addon](https://extensionworkshop.com/documentation/publish/signing-and-distribution-overview/#distributing-your-addon).
