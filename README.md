@@ -1,5 +1,7 @@
 # f2c-extension
 
+![Node.js CI](https://github.com/jimCresswell/f2c-extension/workflows/Node.js%20CI/badge.svg)
+
 A browser extension for automatically converting degrees Fahrenheit to degrees Celsius in the page text.
 
 ## Scripts
@@ -16,6 +18,7 @@ Commands are given with `yarn`, `npm run` will also work.
 
 ## Notes
 
+* Continuous integration is via GitHub actions, config is [here](.github\workflows).
 * Babel is used to transpile the test code, but not the application code (it doesn't need it yet). An alternative would be to remove Babel from the Mocha options and use [mocha-webpack](https://github.com/zinserjan/mocha-webpack) instead.
 
 ## To Do
