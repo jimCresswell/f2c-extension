@@ -4,12 +4,13 @@
 
 A browser extension for automatically converting degrees Fahrenheit to degrees Celsius in the page text.
 
-Fig. 1. Example conversions.
-![Example in-page temperature conversions from Fahrenheit to Celsius](./f2c_screenshot.png "Example in-page temperature conversions from Fahrenheit to Celsius")
-
 Tested against Firefox 73 and Chrome 80.
 
 The published extension is [available on addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/f2c/), visibility may be pending reviewer approval.
+
+## Example
+
+![Example in-page temperature conversions from Fahrenheit to Celsius](./f2c_screenshot.png "Example in-page temperature conversions from Fahrenheit to Celsius")
 
 ## To Build the Zipped Extension Package
 
