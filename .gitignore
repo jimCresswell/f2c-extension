@@ -1,6 +1,9 @@
 # Editor specific files
 .vscode
 
+# Build artefacts
+*.zip
+
 # Logs
 logs
 *.log
