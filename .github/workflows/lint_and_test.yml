@@ -20,6 +20,6 @@ jobs:
     - run: yarn
     - run: yarn build # Builds, runs ESLint on the source code, creates working `manifest.json`
     - run: yarn lint:ext # Lints the Web Extension `manifest.json` file with web-ext.
-    - run: yarn test
+    - run: yarn test:src
       env:
         CI: true
